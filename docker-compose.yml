@@ -5,6 +5,8 @@ services:
     build:
       context: .
     environment:
+      AWS_ACCESS_KEY_ID: xx
+      AWS_SECRET_ACCESS_KEY: xxx
       CRON_SCHEDULE: '*/3 * * * *'
       CRON_COMMAND: 'certbot renew --dry-run'
     volumes:

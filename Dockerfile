@@ -1,4 +1,4 @@
-FROM certbot/certbot:v0.37.2
+FROM certbot/dns-route53:v0.37.2
 
 ENV KUBECTL_VERSION="v1.15.0"
 
