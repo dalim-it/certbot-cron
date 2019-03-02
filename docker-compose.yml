@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  certbot:
+    build:
+      context: .
+    environment:
+      CRON_SCHEDULE: '*/3 * * * *'
+      CRON_COMMAND: 'certbot renew --dry-run'
+    volumes:
+      - ./data:/etc/letsencrypt
+      - ./logs:/var/log/letsencrypt
+      - ./certs:/certificates
+      - ./domains:/domains
+    network_mode: bridge

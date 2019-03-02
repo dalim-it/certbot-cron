@@ -1,0 +1,10 @@
+# Emacs auto-save
+*~
+
+# PyCharm
+.idea/
+
+# Tests
+data/
+logs/
+certs/
