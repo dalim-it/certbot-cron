@@ -1,4 +1,4 @@
-FROM certbot/certbot:v0.31.0
+FROM certbot/certbot:v0.37.2
 
 ENV KUBECTL_VERSION="v1.15.0"
 
